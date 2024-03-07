@@ -2,6 +2,8 @@ package com.example.demo.repository;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.example.demo.entities.Usuario;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,12 @@ public class SugerenciaRepositoryTest extends AbstractIntegrationDBTest{
     public SugerenciaRepositoryTest(SugerenciaRepository sugerenciaRepository, UsuarioRepository usuarioRepository) {
         this.sugerenciaRepository = sugerenciaRepository;
         this.usuarioRepository = usuarioRepository;
+    }
+     @BeforeEach
+    void setUp() {
+        sugerenciaRepository.deleteAll();
+        usuarioRepository.deleteAll();
+
     }
 
     @Test
