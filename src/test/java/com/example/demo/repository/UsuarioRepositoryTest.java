@@ -28,13 +28,13 @@ class UsuarioRepositoryTest extends AbstractIntegrationDBTest {
         Usuario user = usuarioRepository.save(Usuario.builder()
                 .nombre("Maria")
                 .apellidos("García")
-                .username("mariagarcia")
+                .userName("mariagarcia")
                 .password("password456")
                 .build()
         );
 
         assertThat(user.getId()).isNotNull();
-        assertThat(user.getUsername()).isEqualTo("mariagarcia");
+        assertThat(user.getUserName()).isEqualTo("mariagarcia");
     }
 
     @Test
@@ -44,7 +44,7 @@ class UsuarioRepositoryTest extends AbstractIntegrationDBTest {
         Usuario user = usuarioRepository.save(Usuario.builder()
                 .nombre("Maria")
                 .apellidos("García")
-                .username("mariagarcia")
+                .userName("mariagarcia")
                 .password("password456")
                 .build()
         );
@@ -64,7 +64,7 @@ class UsuarioRepositoryTest extends AbstractIntegrationDBTest {
         Usuario user = usuarioRepository.save(Usuario.builder()
                 .nombre("Pedro")
                 .apellidos("Ramírez")
-                .username("pedroramirez")
+                .userName("pedroramirez")
                 .password("password789")
                 .build()
         );
@@ -84,7 +84,7 @@ class UsuarioRepositoryTest extends AbstractIntegrationDBTest {
         Usuario user = usuarioRepository.save(Usuario.builder()
                 .nombre("Ana")
                 .apellidos("López")
-                .username("analopez")
+                .userName("analopez")
                 .password("password012")
                 .build()
         );
