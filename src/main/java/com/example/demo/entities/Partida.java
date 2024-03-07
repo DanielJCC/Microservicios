@@ -1,4 +1,4 @@
-package com.example.demo.controllers.entities;
+package com.example.demo.entities;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -14,15 +14,19 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Setter
 @Getter
 @Entity
 @Table(name = "partidas")
+@Builder
 public class Partida {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
