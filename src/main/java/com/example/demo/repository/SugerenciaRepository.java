@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entities.Sugerencia;
 
 public interface SugerenciaRepository extends JpaRepository<Sugerencia,UUID>{
-    List<Sugerencia> findByDescriptionLike(String description);
+    List<Sugerencia> findByDescriptionContaining(String description);
 }
