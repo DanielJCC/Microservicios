@@ -1,4 +1,4 @@
-package com.example.demo.controllers.entities;
+package com.example.demo.entities;
 
 import java.time.LocalTime;
 import java.util.UUID;

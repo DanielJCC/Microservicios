@@ -1,4 +1,4 @@
-package com.example.demo.controllers.repositories;
+package com.example.demo.repositories;
 
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

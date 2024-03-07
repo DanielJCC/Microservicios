@@ -1,10 +1,11 @@
-package com.example.demo.controllers.repositories;
+package com.example.demo.repositories;
 
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.controllers.entities.Usuario;
+import com.example.demo.entities.Usuario;
+
 import java.util.List;
 
 

@@ -1,4 +1,4 @@
-package com.example.demo.controllers.repositories;
+package com.example.demo.repositories;
 
 
 import java.time.LocalTime;
@@ -8,9 +8,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import static org.assertj.core.api.Assertions.assertThat;
 
-import com.example.demo.controllers.entities.Mensaje;
+import com.example.demo.entities.Mensaje;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class MensajeRepositoryTest extends AbstractIntegrationDBTest{
     MensajeRepository mensajeRepository;

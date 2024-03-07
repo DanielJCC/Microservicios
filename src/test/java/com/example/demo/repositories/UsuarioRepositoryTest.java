@@ -1,4 +1,4 @@
-package com.example.demo.controllers.repositories;
+package com.example.demo.repositories;
 
 
 import org.junit.jupiter.api.BeforeEach;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.demo.controllers.entities.Usuario;
+import com.example.demo.entities.Usuario;
 
 import java.util.List;
 

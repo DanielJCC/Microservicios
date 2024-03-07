@@ -1,4 +1,4 @@
-package com.example.demo.controllers.repositories;
+package com.example.demo.repositories;
 
 
 import java.time.LocalDate;
@@ -7,7 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.demo.controllers.entities.Partida;
+import com.example.demo.entities.Partida;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class PartidaRepositoryTest extends AbstractIntegrationDBTest{
