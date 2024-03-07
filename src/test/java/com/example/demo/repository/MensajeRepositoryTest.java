@@ -1,4 +1,4 @@
-package com.example.demo.repositories;
+package com.example.demo.repository;
 
 
 import java.time.LocalTime;
@@ -9,6 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.example.demo.AbstractIntegrationDBTest;
 import com.example.demo.entities.Mensaje;
 
 import static org.assertj.core.api.Assertions.assertThat;

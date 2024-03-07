@@ -1,4 +1,4 @@
-package com.example.demo.repositories;
+package com.example.demo.repository;
 
 
 import java.time.LocalDate;
@@ -7,7 +7,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.example.demo.AbstractIntegrationDBTest;
 import com.example.demo.entities.Partida;
+import com.example.demo.repository.PartidaRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
