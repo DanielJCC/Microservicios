@@ -2,6 +2,8 @@ package com.example.demo.repository;
 
 import com.example.demo.AbstractIntegrationDBTest;
 import com.example.demo.entities.Usuario;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,13 @@ class UsuarioRepositoryTest extends AbstractIntegrationDBTest {
     @Autowired
     public UsuarioRepositoryTest(UsuarioRepository usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
+    }
+
+     @BeforeEach
+    void setUp() {
+
+        usuarioRepository.deleteAll();
+
     }
 
     @Test
