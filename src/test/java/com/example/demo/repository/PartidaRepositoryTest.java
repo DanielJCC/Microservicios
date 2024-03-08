@@ -88,7 +88,7 @@ public class PartidaRepositoryTest extends AbstractIntegrationDBTest{
                 .hora_final(LocalTime.now().plusHours(2))
                 .participantes(2)
                 .suplentes(2)
-                .comentarios("Partida de baloncesto en Barcelona")
+                .comentarios("Partida de tenis en la zona bananera")
                 .build()
         );
 
